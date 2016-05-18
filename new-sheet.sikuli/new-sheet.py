@@ -9,6 +9,9 @@ import time
 if not exists("1463581342128.png"):
     click("1463535593042.png")
 
+#Some times , the excel window is not active. 
+#So we need to click label 'ready' to make the excel window is active.
+#We can click icon to add new sheet at next step.
 click("1463584301588.png")
 click("1463535665977.png")
 dragDrop("1463535726227.png", "1463535759063.png")
