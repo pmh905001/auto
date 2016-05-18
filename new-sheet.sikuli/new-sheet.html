@@ -71,17 +71,25 @@
 </div>
 <pre class="sikuli-code">
 <span class="kw">import</span> time
+<span class="cmt">############################################################################</span>
+<span class="cmt">#</span>
+<span class="cmt">#This script help me to create new sheet, named as %month-%day formated</span>
+<span class="cmt">#</span>
+<span class="cmt">#############################################################################</span>
 
-<span class="skw">click</span>(<img src="1463535593042.png" />)
+<span class="cmt">#Make excel UI on top</span>
+<span class="kw">if</span> <span class="kw">not</span> exists(<img src="1463581342128.png" />):
+    <span class="skw">click</span>(<img src="1463535593042.png" />)
 <span class="skw">click</span>(<img src="1463535665977.png" />)
 <span class="skw">dragDrop</span>(<img src="1463535726227.png" />, <img src="1463535759063.png" />)
 
 ISOTIMEFORMAT=<span class="str">"%m-%d"</span>
-myTime=time.strftime( ISOTIMEFORMAT, time.localtime() )
-<span class="kw">print</span> myTime
+myDate=time.strftime( ISOTIMEFORMAT, time.localtime() )
+<span class="kw">print</span> myDate
 
 <span class="skw">doubleClick</span>(<img src="1463536447521.png" />)
-<span class="skw">type</span>(myTime)
+<span class="skw">type</span>(myDate)
+<span class="skw">click</span>(<img src="1463582110026.png" />)
 <span class="skw">type</span>(<span class="str">"s"</span>,KEY_CTRL)
 </pre>
 </body>
