@@ -13,6 +13,7 @@ if not exists("1463581342128.png"):
 #So we need to click label 'ready' to make the excel window is active.
 #We can click icon to add new sheet at next step.
 click("1463584301588.png")
+click("1464476868853.png")
 click("1463535665977.png")
 dragDrop("1463535726227.png", "1463535759063.png")
 
